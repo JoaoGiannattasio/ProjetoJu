@@ -1,0 +1,26 @@
+create database proj;
+create table cliente(
+id int auto_increment primary key,
+nome varchar(100),
+email varchar(100),
+senha varchar(100),
+telefone char(13));
+
+create table tarefas(
+id int auto_increment primary key,
+descricao varchar(100),
+dia varchar(100),
+quantidade int
+);
+
+INSERT INTO tarefas (descricao, dia, quantidade) 
+VALUES ('Ir para academia', 'Segunda', '1'),
+		('Cozinhar', 'Segunda', '3'),  
+        ('Cozinhar', 'Quarta', '3'),
+        ('Cozinhar', 'Sexta', '3'),
+        ('Trabalhar', 'Segunda', '1');
+
+SELECT * FROM proj.tarefas;
+
+
+
